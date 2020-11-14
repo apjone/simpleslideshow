@@ -7,7 +7,9 @@ Simple Javascript &amp; PHP Slide Show
 * browse to URL
 
 
+## Credits
+Several stack overflow's and w3c schools articles allowed me to create this. 
 
 
-
+### Updates
 Get the latest version from [HERE](https://github.com/apjone/simpleslideshow)
