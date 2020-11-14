@@ -5,3 +5,9 @@ Simple Javascript &amp; PHP Slide Show
 * Copy files to web root
 * Copy images to images/ folder
 * browse to URL
+
+
+
+
+
+Get the latest version from [HERE](https://github.com/apjone/simpleslideshow)
