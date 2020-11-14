@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Simple Slide Show</title>
+		<script src="jquery-3.5.1.min.js"></script>
+		<style>
+			body { background: black; margin-top: 2%;}
+		</style>
+	</head>
+	<body>
+		<div id="main"><center><img src="" name="image" id="image" width="1200" height="800" /></center></div>
+
+	</body>
+<script>
+// Lets Get the URL of the host
+var server = location.protocol + "//" + location.host;
+// Lets use the server URL to locate content.php that will give us the JSON string
+$.get( server + '/content.php',function(data){
+	// Let get the legnth of the string minus the dummy entry
+	mc = data.length;
+	// Out loop time will be 10s x the number of images
+	loop = ( mc - 1 ) * 10000;
+	// Set the reload timeout 
+	setTimeout(function() { location.reload() }, loop );
+	// Loop through the images
+	for (i = 0; i < data.length; i++) {
+		changeImage(data[i].image,i);
+	}
+},'json');
+// This will display the images at intervals
+async function changeImage(i,t){
+	o = t * 10000;
+	await setTimeout(function(){$('#image').attr('src','/images/' + i )}, o) ;
+}
+</script>
+</html>
