@@ -3,6 +3,7 @@ Simple Javascript &amp; PHP Slide Show
 
 ## Install
 * Copy files to web root
+* Either download JQuery or use hosted version and update slide.html as required
 * Copy images to images/ folder
 * browse to URL
 
